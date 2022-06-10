@@ -1,0 +1,171 @@
+#dlight {
+  padding-top: 0;
+}
+#dlight .wrap {
+  position: relative;
+}
+#dlight p.history {
+  color: #ccc;
+  line-height: 4;
+  padding-left: 20px;
+  font-size: 14px;
+  background-color: #424447;
+}
+#dlight p.history strong{ 
+  font-weight: 500;
+}
+#dlight h2.h6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  line-height: 56px;
+  text-align: center;
+  font-size: 16px;
+}
+#dlight h2.h6::after{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+#dlight article {  
+  padding: 0 50px;
+}
+#dlight article.f1{  
+  
+}
+#dlight article.b1{  
+
+}
+#dlight article .basic{ 
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 100px 0 50px 0;
+  height: 400px;
+  position: relative;
+}
+#dlight article.f1 .basic{ 
+  padding-left: 50px;
+}
+#dlight article.b1 .basic{ 
+  align-items: end;
+  padding-right: 50px;
+}
+#dlight article .basic::before{
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#dlight article.f1 .basic::before{
+  background-image: url(../img/article1.webp);
+}
+#dlight article.b1 .basic::before{
+  background-image: url(../img/article2.webp);
+  left: 0;
+}
+#dlight article h3.h3 { 
+  font-size: 40px;
+  width: 42%;
+}
+#dlight article p.p {  
+  font-size: 18px;
+  width: 42%;
+  line-height: 1.6;
+  margin: 30px 0;
+}
+#dlight article .basic a{  
+  padding: 15px 0;
+  width: 150px;
+  display: block;
+  text-align: center;
+  border-radius: 28px;
+  border: 1px solid #000;
+  transition: all 0.5s;
+  margin-right: calc(42% - 152px); 
+}
+#dlight article .basic a:hover{ 
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#dlight article .basic a::after{
+  content: "";
+  background-image: url(../img/link.png);
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  background-size: 100%;
+  margin-left: 10px;
+  transition: all 0.5s;
+}
+#dlight article .basic a:hover::after{
+  background-image: url(../img/linkw.png);
+}
+#dlight article ul.list {
+  display: flex;
+  border: 1px solid #dadada;
+}
+#dlight article ul.list>li { 
+  width: 50%;
+  padding: 50px;
+}
+#dlight article ul.list > li:nth-of-type(2){
+  position: relative;
+}
+#dlight article ul.list > li:nth-of-type(2)::before{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 300px;
+  background-color: #dadada;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 150px);
+}
+#dlight article ul.list li h4.h4 {
+  text-align: center;
+  margin-bottom: 41px;
+}
+#dlight article ul.list li ul.sub {
+  
+}
+#dlight article ul.list li ul.sub li {
+  line-height: 3;
+}
+#dlight article ul.list li ul.sub li::before{
+  content: "· ";
+}
+#dlight article ul.list li ul.sub li strong {  
+  font-weight: 600;
+  width: 120px;
+  display: inline-block;
+}
+#dlight article ul.list li ul.sub li a {
+  
+}
+#dlight article ul.list li ul.sub li:nth-of-type(3) a {  
+  display: block;
+  margin-left: 120px;
+  color: #183eaf;
+  font-weight: 600;
+  font-size: 14px;
+}
+.current{
+  border-bottom: 3px solid #1428ad;
+  color: #1428ad;
+}
+.here{
+  color: #fff;
+}

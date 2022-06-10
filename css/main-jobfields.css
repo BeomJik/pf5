@@ -1,0 +1,171 @@
+#jobfields {
+  padding-top: 0;
+}
+#jobfields .wrap {
+  position: relative;
+}
+#jobfields p.history {
+  color: #ccc;
+  line-height: 4;
+  padding-left: 20px;
+  font-size: 14px;
+  background-color: #424447;
+}
+#jobfields p.history strong{ 
+  font-weight: 500;
+}
+#jobfields h2.h6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  line-height: 56px;
+  text-align: center;
+  font-size: 16px;
+}
+#jobfields h2.h6::after{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+#jobfields .wrap > p.p{  
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 6;
+  text-align: center;
+}
+#jobfields .wrap > div{  
+  width: 95%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+#jobfields .wrap > div::before{
+  content: "";
+  display: inline-block;
+  width: 507px;
+  height: 235px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#jobfields .wrap > div:nth-of-type(1)::before{
+  background-image: url(../img/jobfields1.jpg);
+}
+#jobfields .wrap > div:nth-of-type(2)::before{
+  background-image: url(../img/jobfields2.jpg);
+}
+#jobfields .wrap > div:nth-of-type(3)::before{
+  background-image: url(../img/jobfields3.jpg);
+}
+#jobfields .wrap > div:nth-of-type(4)::before{
+  background-image: url(../img/jobfields4.jpg);
+}
+#jobfields .wrap > div:nth-of-type(5)::before{
+  background-image: url(../img/jobfields5.jpg);
+}
+#jobfields .wrap > div:nth-of-type(6)::before{
+  background-image: url(../img/jobfields6.jpg);
+}
+
+#jobfields .wrap > div h3{  
+  font-size: 40px;
+  font-weight: 500;
+  margin: -14% 0 3% 50%;
+}
+#jobfields .wrap > div h3 + p{
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0% 0 10% 50%;
+}
+#jobfields .wrap > div ul{
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #dadada;
+  /*! width: 100%; */
+}
+#jobfields .wrap > div ul li{
+  display: flex;
+  width: 100%;
+  line-height: 1.6;
+  border-bottom: 1px solid #dadada;
+  box-sizing: border-box;
+}
+#jobfields .wrap > div ul li h4{
+  font-size: 17px;
+  font-weight: 300;
+
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  width: 15%;
+  background-color: #f7f7f7;
+}
+#jobfields .wrap > div ul li p{
+  font-size: 16px;
+  font-weight: 300;
+  width: 85%;
+  padding: 20px 30px;
+  color: #333;
+}
+#jobfields .wrap > div ul + p{  
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 3;
+}
+#jobfields div.posting{ 
+  background-color: #222425;
+  color: #fff;
+  height: 300px;
+  width: 95%;
+  text-align: center;
+  display: block;
+  margin: 120px auto;
+  padding: initial;
+}
+#jobfields div.posting::before{
+  display: none;
+}
+#jobfields .posting p{ 
+  font-size: 22px;
+  font-weight: 500;
+  padding: 100px 0 40px 0;
+}
+#jobfields .posting a{ 
+  width: 150px;
+  margin: 20px auto;
+  padding: 20px 0;
+  background-color: #222425;
+  border-radius: 28px;
+  font-size: 14px;
+  transition: all 0.3s;
+  border: 1px solid #fff;
+  display: block;  
+  color: #fff
+}
+#jobfields .posting a:hover{ 
+  background-color: #fff;
+  color: #000;
+}
+#jobfields .posting a::after{
+  content: "";
+  background-image: url(../img/linkw.png);
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  background-size: 100%;
+  margin-left: 10px;
+  transition: all 0.3s;
+}
+#jobfields .posting a:hover::after{
+  background-image: url(../img/link.png);
+}
+.current{
+  border-bottom: 3px solid #1428ad;
+  color: #1428ad;
+}
+.here{
+  color: #fff;
+}

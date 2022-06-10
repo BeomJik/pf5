@@ -1,0 +1,692 @@
+#hiring {
+  padding-top: 0;
+}
+#hiring .wrap {
+  position: relative;
+}
+#hiring p.history {
+  color: #ccc;
+  line-height: 4;
+  padding-left: 20px;
+  font-size: 14px;
+  background-color: #424447;
+}
+#hiring p.history strong{ 
+  font-weight: 500;
+}
+#hiring h2.h6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  line-height: 56px;
+  text-align: center;
+  font-size: 16px;
+}
+#hiring h2.h6::after{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+#hiring .wrap > div {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+#hiring div h3.h3 {  
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+#hiring div h3 + p.p {
+  
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.8;
+  margin: 50px 0;
+}
+
+#hiring div .list {
+  
+  border-top: 2px solid #000;
+}
+
+#hiring div .list > li {  
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#hiring div .list > li:nth-child(3) h4.h4{  
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+  padding: 30px;
+}
+#hiring div .list > li:nth-child(3) h4.h4.rot180{
+  background-color: #f9f9f9;
+  color: #183eaf;
+}
+#hiring div .list > li:nth-child(3) h4.h4.rot180::after{
+  transform: rotate(-45deg) translateX(-4px) translateY(4px);
+  border-color: #183eaf;
+}
+#hiring div .list > li:nth-child(3) h4::after{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #000;
+  border-bottom: none;
+  border-left: none;
+  transform: rotate(135deg) translateX(-4px) translateY(4px);
+}
+#hiring div .list li h4.h4 {
+  
+  font-size: 25px;
+  font-weight: 500;
+  width: 20%;
+  padding: 30px;
+}
+#hiring div .list li > ul {  
+  width: 90%;
+  /*! margin: 0 auto; */
+}
+#hiring div .list li > ul > li{  
+  
+  padding: 30px 0;
+}
+#hiring div .list li > ul > li > p.p{    
+  font-size: 16px;
+  font-weight: 300;
+  width: 50%;
+}
+#hiring div .list li .detail {
+  width: 100%;
+  padding: 0 30px;
+}
+#hiring div .list li > ul li p.p strong {  
+  font-weight: 500;
+}
+
+#hiring div .list li .process li {  
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#hiring div .list li .process li p.p { 
+  width: fit-content;
+}
+
+#hiring div .list li .process li {  
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+
+#hiring .recruitment {
+  
+}
+
+#hiring .recruitment h3.h3 {
+  
+}
+
+#hiring .recruitment p.p {
+  
+}
+
+#hiring .recruitment .list {
+  
+}
+#hiring .recruitment .list li {
+  justify-content: space-between;
+}
+
+#hiring .recruitment .list li h4.h4 {
+  width:fit-content;
+}
+
+#hiring .recruitment .list li .hire {
+  width: 80%;
+}
+
+#hiring .recruitment .list li .hire li {
+}
+
+#hiring .recruitment .list li .hire li p.p {
+}
+
+#hiring .recruitment .list li .hire li p.p > span {
+  display: block;
+  margin-left: 82px;
+}
+#hiring .recruitment .list li .hire li p.p > span span {
+  font-size: 14px;
+  scolor: #333;
+}
+#hiring .recruitment .list li .process { 
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#hiring .recruitment .list li .process li::after{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #1428a0;
+  transform: rotate(45deg) translateY(-30px) translateX(10px);
+  border-bottom: none;
+  border-left: none;
+}
+#hiring .recruitment .list li .process li:nth-child(5)::after{
+display: none;
+}
+
+#hiring .recruitment .list li .process li p.p {
+  
+  text-align: center;
+}
+#hiring .recruitment .list li .process p.p::before{
+  content: "";
+  display: block;
+  width: 133px;
+  height: 133px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#hiring .recruitment .list li .process li:nth-child(1) p.p::before{
+  background-image: url(../img/hire1.webp);
+}
+#hiring .recruitment .list li .process li:nth-child(2) p.p::before{
+  background-image: url(../img/hire2.webp);
+}
+#hiring .recruitment .list li .process li:nth-child(3) p.p::before{
+  background-image: url(../img/hire3.webp);
+}
+#hiring .recruitment .list li .process li:nth-child(4) p.p::before{
+  background-image: url(../img/hire4.webp);
+}
+#hiring .recruitment .list li .process li:nth-child(5) p.p::before{
+  background-image: url(../img/hire5.webp);
+}
+
+#hiring .recruitment .list li .detail {
+  
+}
+
+#hiring .recruitment .list li .detail li {
+  display: flex;
+  justify-content: initial;
+  flex-wrap: wrap;
+}
+#hiring .recruitment .list li .detail > li:nth-child(3){
+  flex-wrap: wrap;
+
+}
+#hiring .recruitment .list li .detail li p.h5 {
+  width: 20%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#hiring .recruitment .list li .detail li p.p {
+  width: 80%;
+}
+#hiring .recruitment .list li .detail > li:nth-child(3) p.p{
+  margin-bottom: 50px;
+}
+#hiring .recruitment .list li .detail li:nth-child(3) p.p:nth-of-type(3),
+#hiring .recruitment .list li .detail li:nth-child(3) p.p:nth-of-type(4){
+  margin-left: 20%;
+}
+#hiring .recruitment .list li .detail li p.p strong {
+  
+}
+
+#hiring .recruitment .list li .detail li p.p span {
+  
+}
+
+#hiring .recruitment .list li .interview {
+  margin-left: 20%;
+  margin-top: 20px;
+  width: 80%;
+}
+
+#hiring .recruitment .list li .interview ul {
+
+}
+
+#hiring .recruitment .list li .interview > ul li {
+  display: flex;
+  flex-wrap: initial;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid #dadada;
+  /*! box-sizing: border-box; */
+  position: relative;
+}
+#hiring .recruitment .list li .interview > ul li:nth-child(3){
+  padding: 20px 0;
+}
+#hiring .recruitment .list li .interview ul li p.h6 {
+  width: 20%;
+}
+#hiring .recruitment .list li .interview ul li:nth-child(1) p.h6:after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 355px;
+  background-color: #dadada;
+  position: absolute;
+  top: 0;
+  left: 15%;
+}
+#hiring .recruitment .list li .interview ul li:nth-child(1){
+  background-color: #f7f7f7;
+  border-top: 2px solid #000;
+}
+#hiring .recruitment .list li .interview ul li:nth-child(1) p.h6{
+  font-size: 0;
+
+}
+#hiring .recruitment .list li .interview ul li:nth-child(3) p.h6{
+  width: 13%;
+}
+#hiring .recruitment .list li .interview ul li p.p {
+  line-height: 2;
+  font-size: 16px;
+}
+#hiring .recruitment .list li .interview ul li:nth-child(3) p.p {
+  width: 100%;
+}
+#hiring .internship {
+  
+}
+
+#hiring .internship h3.h3 {
+  
+}
+
+#hiring .internship p.p {
+  
+}
+
+#hiring .internship .list {
+  
+}
+.rot180 {
+  border-bottom: 1px solid #dadada;
+}
+#hiring .internship .list li {
+  
+}
+
+#hiring .internship .list li h4.h4 {
+  width: fit-content;
+}
+
+#hiring .internship .list li .hire {
+  
+}
+
+#hiring .internship .list li .hire li {
+  
+}
+
+#hiring .internship .list li .hire li p.p {
+  
+}
+
+#hiring .internship .list li .hire li p.p span {
+  
+}
+
+#hiring .internship .list li:nth-child(1) .process {
+  width: 80%;
+}
+
+#hiring .internship .list li:nth-child(2) .process {  
+
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+#hiring .internship .list li .process li {
+  
+}
+#hiring .internship .list li:nth-child(1) .process li {
+  padding: 30px;
+}
+#hiring .internship .list li:nth-child(2) .process li {
+  
+  flex-direction: column;
+}
+#hiring .internship .list li:nth-child(2) .process li::before{
+  content: "";
+  display: block;
+  width: 133px;
+  height: 133px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+#hiring .internship .list li:nth-child(2) .process li:nth-child(1)::before{
+  background-image: url(../img/hire1.webp);
+}
+#hiring .internship .list li:nth-child(2) .process li:nth-child(2)::before{
+  background-image: url(../img/hire2.webp);
+}
+#hiring .internship .list li:nth-child(2) .process li:nth-child(3)::before{
+  background-image: url(../img/hire3.webp);
+}
+#hiring .internship .list li:nth-child(2) .process li:nth-child(4)::before{
+  background-image: url(../img/hire4.webp);
+}
+#hiring .internship .list li:nth-child(2) .process li::after{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #1428a0;
+  transform: rotate(45deg) translateY(-158px) translateX(9px);
+  border-bottom: none;
+  border-left: none;
+}
+#hiring .internship .list li:nth-child(2) .process li:nth-child(4)::after{
+  display: none;
+}
+#hiring .internship .list li .process li p.p {
+  
+}
+#hiring .internship .list li .process li p.p > span {
+  display: block;
+  text-align: right
+}
+#hiring .internship .list li .process li p.p > span span{
+  font-size: 14px;
+  color: #333;
+}
+#hiring .internship .list li .detail {
+  
+}
+
+#hiring .internship .list li .detail li {
+  display: flex;
+  line-height: 2;
+  justify-content: initial;
+  flex-wrap: wrap;
+}
+
+#hiring .internship .list li .detail li:nth-child(3){
+}
+#hiring .internship .list li .detail li p.h5 {
+  width: 20%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#hiring .internship .list li .detail li p.p {
+  
+}
+
+#hiring .internship .list li .detail li:nth-child(3) p.p{
+  margin-bottom: 50px;
+}
+#hiring .internship .list li .detail li:nth-child(3) p.p:nth-of-type(3),
+#hiring .internship .list li .detail li:nth-child(3) p.p:nth-of-type(4) {
+  margin-left: 20%;
+}
+#hiring .internship .list li .detail li p.p strong {
+  
+}
+
+#hiring .internship .list li .detail li p.p span {
+  font-size: 15px;
+  color: #333;
+}
+#hiring .internship .list li .detail li:nth-child(3) p.p span {
+  margin-left: 10px;
+}
+#hiring .internship .list li .interview {
+  
+}
+
+#hiring .internship .list li .interview ul {
+  
+}
+
+#hiring .internship .list li .interview ul li {
+  
+}
+
+#hiring .internship .list li .interview ul li p.h6 {
+  
+}
+
+#hiring .internship .list li .interview ul li p.p {
+  
+}
+
+#hiring .career {
+  
+}
+
+#hiring .career h3.h3 {
+  
+}
+
+#hiring .career p.p {
+  
+}
+
+#hiring .career .list {
+  
+}
+
+#hiring .career .list li {
+  
+}
+
+#hiring .career .list li h4.h4 {
+  width: fit-content;
+}
+
+#hiring .career .list li .hire {
+  
+}
+
+#hiring .career .list li .hire li {
+  
+}
+
+#hiring .career .list li .hire li p.p {
+  
+}
+
+#hiring .career .list li .hire li p.p span {
+  
+}
+#hiring .career .list li .process {
+  
+}
+#hiring .career .list li .process li{
+  
+}
+#hiring .career .list li:nth-child(1) .process {  
+  width: 80%;
+  padding: 30px;
+}
+
+#hiring .career .list li:nth-child(2) .process {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+#hiring .career .list li:nth-child(2) .process li { 
+  display: block;
+}
+#hiring .career .list li:nth-child(2) .process li::before{
+  content: "";
+  display: block;
+  width: 133px;
+  height: 133px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+#hiring .career .list li:nth-child(2) .process li:nth-child(1)::before{
+  background-image: url(../img/hire1.webp);
+}
+#hiring .career .list li:nth-child(2) .process li:nth-child(2)::before{
+  background-image: url(../img/hire2.webp);
+}
+#hiring .career .list li:nth-child(2) .process li:nth-child(3)::before{
+  background-image: url(../img/hire3.webp);
+}
+#hiring .career .list li:nth-child(2) .process li:nth-child(4)::before{
+  background-image: url(../img/hire4.webp);
+}
+#hiring .career .list li:nth-child(2) .process li::after{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #1428a0;
+  transform: rotate(45deg) translateY(-158px) translateX(9px);
+  border-bottom: none;
+  border-left: none;
+}
+#hiring .career .list li:nth-child(2) .process li:nth-child(4)::after{
+  display: none;
+}
+#hiring .career .list li .process li p.p {  
+  text-align: initial;
+  line-height: 2;
+}
+#hiring .career .list li:nth-child(2) .process li {  
+  display: flex;
+  flex-direction: column;
+}
+#hiring .career .list li .process li p.p span{
+  font-size: 14px;
+  color: #333;
+}
+#hiring .career .list li .detail {
+  
+}
+
+#hiring .career .list li .detail li {
+  display: flex;
+  line-height: 2;
+}
+
+#hiring .career .list li .detail li p.h5 {
+  font-size: 16px;
+  font-weight: 400;
+  width: 20%;
+}
+
+#hiring .career .list li .detail li p.p {
+  
+}
+
+#hiring .career .list li .detail li p.p strong {
+  
+}
+
+#hiring .career .list li .detail li p.p span {
+  font-size: 15px;
+  color: #333;
+}
+
+#hiring .career .list li .interview {
+  
+}
+
+#hiring .career .list li .interview ul {
+  
+}
+
+#hiring .career .list li .interview ul li {
+  
+}
+
+#hiring .career .list li .interview ul li p.h6 {
+  
+}
+
+#hiring .career .list li .interview ul li p.p {
+  
+}
+
+#hiring .wrap > .posting{ 
+  background-color: #222425;
+  color: #fff;
+  height: 300px;
+  width: 95%;
+  text-align: center;
+  display: block;
+  margin: 120px auto;
+}
+#hiring .posting p{ 
+  font-size: 22px;
+  font-weight: 500;
+  padding: 100px 0 40px 0;
+}
+#hiring .posting a{ 
+  width: 150px;
+  margin: 20px auto;
+  padding: 20px 0;
+  background-color: #222425;
+  border-radius: 28px;
+  font-size: 14px;
+  transition: all 0.3s;
+  border: 1px solid #fff;
+  display: block;  
+  color: #fff
+}
+#hiring .posting a:hover{ 
+  background-color: #fff;
+  color: #000;
+}
+#hiring .posting a::after{
+  content: "";
+  background-image: url(../img/linkw.png);
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  background-size: 100%;
+  margin-left: 10px;
+  transition: all 0.3s;
+}
+#hiring .posting a:hover::after{
+  background-image: url(../img/link.png);
+}
+.current{
+  border-bottom: 3px solid #1428ad;
+  color: #1428ad;
+}
+.here{
+  color: #fff;
+}

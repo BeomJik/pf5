@@ -1,0 +1,102 @@
+/* 모바일 */
+@media screen and (max-width:768px){
+  /*  common  */
+  .h3{
+  font-size: calc(40px * 0.7) !important;;
+  }
+  section:nth-child(1) > .wrap{    
+  padding: initial;
+  }
+  p.history{    
+  text-align: center;
+  padding: initial !important;
+  }
+  /* 타이틀영역 */
+  #subtitle .wrap{    
+  padding: initial;
+  background-repeat: no-repeat;
+  height: 52.084vw;
+  text-align: center;
+  }
+  #subtitle h3.h1{   
+  font-size: calc(60px * 0.6);
+  }
+  /*  메인영역  */
+  /* philosophy.html */
+  #philosophy h2.h6{
+  position: static;
+  color: #000;
+  }
+  #philosophy h2.h6::after{  
+  background-color: #000;
+  }
+  #philosophy .list li a{   
+  font-size: 16px;
+  }
+  #philosophy h3 + p.p{
+  font-size: 14px;
+  padding: 0 30px;
+  }
+  #philosophy .contents li h4.h4{    
+  padding-left: calc(130px * 0.7);
+  font-size: calc(27px * 0.7);
+  }
+  #philosophy .contents li h4.h4::before{
+  left: 20px;
+  font-size: calc(90px * 0.8);
+  }
+  #philosophy .contents li h4.h4::after{
+  display: none;
+  }
+  #philosophy .contents li p.p{
+  padding: 0 0 0 20px;
+  line-height: 1.6;
+  }
+  #philosophy .contents li p.p:nth-of-type(1){   
+  padding: 20px 0 0 20px;
+  }
+  /* history.html */
+  #history .wrap{
+    
+  }
+  #history p.p{ 
+  padding: 0 30px;
+  margin: 30px 0;
+  }
+  #history .all article{  
+  display: block;
+  text-align: center;
+  }
+  #history .all article .detail{ 
+  padding: 30px 0 0 0;
+  text-align: left;
+  }
+} 
+
+/* 테블릿 */
+
+@media screen and (max-width:1024px){
+    /*  common  */
+  section:nth-child(1) > .wrap{    
+  padding: initial;
+  }
+  /*  상단 영역  */
+  /*  타이틀 영역  */
+  /* philosophy.html */
+  #subtitle .wrap{
+  padding: initial;
+  text-align: center;
+  }
+  /*  메인 영역  */
+  #philosophy h3 + p.p{   
+  /*! padding: 0 175px; */
+  }
+  #philosophy .contents li h4.h4::after{
+  margin: 10px 0 0 0;
+  height: calc(96px * 0.7);
+  width: calc(121px * 0.7);
+  background-size: 100%;
+  }
+  /* history.html */
+
+}

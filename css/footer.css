@@ -1,0 +1,174 @@
+footer {
+  
+}
+footer .wrap {
+  width: auto;
+}
+footer .wrap>* {
+  padding: 15px calc((100% - 1400px) / 2);
+}
+footer ul.fnb {  
+  display: flex;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+footer ul.fnb>li {
+  border-left: 1px solid #eee;
+  width: 20%;
+  padding: 15px;
+}
+footer ul.fnb > li:nth-child(1){
+  border-left: none;
+}
+footer ul.fnb li h2 {
+  padding: 15px 0;
+  font-weight: 600;
+}
+footer ul.fnb li ul {
+
+}
+footer ul.fnb li ul li {
+
+}
+footer ul.fnb li ul li a {
+  padding: 15px 0;
+  display: inline-block;  
+}
+footer ul.fnb li ul li a:hover{
+  text-decoration: underline;
+}
+footer div.middle { 
+  border-top: 1px solid #d9d9d9; 
+  border-bottom: 1px solid #d9d9d9;
+}
+footer .middle > *{
+  line-height: 2;
+  font-size: 12px;
+  color: #777777;
+}
+footer div.middle address {
+  
+}
+footer div.middle address a {
+  
+  border-radius: 10px;
+  background-color: #777777;
+  color: #fff;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+footer div.middle address span { 
+ 
+}
+footer div.middle p.p {
+  
+}
+footer div.middle p.copyright {
+  font-size: 13px;
+}
+footer div.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+footer div.bottom .left { 
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+}
+footer div.bottom .left li {
+  
+}
+footer div.bottom .left li:nth-child(-n+3)::after{
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #777;
+  margin: 0 0 0 10px;
+}
+footer div.bottom .left li a {
+  color: #333;
+}
+footer div.bottom .left li select {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  appearance: none;
+  line-height: 2.5;
+  background: url(../img/arrow-up.png) no-repeat center;
+  background-size: 10%;
+  background-position: 93% 50%;
+  padding-left: 10px;
+}
+footer div.bottom .left li select option {
+  
+}
+footer div.bottom .right { 
+  display: flex;
+  font-size: 10px;
+  align-items: center;
+}
+footer div.bottom .right span.banner {  
+  display: flex;
+  align-items: center;
+}
+footer div.bottom .right span.banner li {
+  padding: 0 10px;
+}
+footer div.bottom .right span.banner li a {
+  display: inline-block;
+  font-size: 0;
+
+  transform: scale(100%);
+}
+footer div.bottom .right span.banner li:nth-child(1) a{
+  background-image: url(../img/wep.png);
+    width: 68px;
+  height: 48px;
+}
+footer div.bottom .right span.banner li:nth-child(2) a{
+  background-image: url(../img/person.png);
+    width: 41px;
+  height: 41px;
+}
+footer div.bottom .right ul.sns {  
+  display: flex;
+}
+footer div.bottom .right ul.sns::before{
+  content: "SNS";
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+footer div.bottom .right ul.sns li { 
+  padding: 0 10px;
+}
+footer div.bottom .right ul.sns li a {
+  padding: 6px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-size: 0;
+}
+footer div.bottom .right ul.sns li:nth-child(1) a{
+  background-image: url(../img/facebook.png);
+  background-size: 100%;
+}
+footer div.bottom .right ul.sns li:nth-child(2) a{
+  background-image: url(../img/youtube.png);
+  background-size: 100%;
+}
+footer div.bottom .right ul.sns li:nth-child(3) a{
+  background-image: url(../img/instagram.png);
+  background-size: 100%;
+}
+footer div.bottom .right ul.sns li:nth-child(4) a{
+  background-image: url(../img/blogger.png);
+  background-size: 100%;
+}

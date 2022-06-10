@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pf5-삼성전자 회사소개 직무소개</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    
+
+    <!-- 구글폰트 noto sans korean -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- 이온아이콘 -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" href="css/title-jobfields.css" type="text/css">
+    <link rel="stylesheet" href="css/main-jobfields.css" type="text/css">
+    <link rel="stylesheet" href="css/aside.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive-sub.css" type="text/css">
+    <!-- <script src="js/jquery-1.6.2.min.js"></script> -->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            // $("ul.gnb").mouseenter(
+            //     function(){
+            //         $("ul.gnb .bg").remove();
+            //         $("ul.gnb").prepend("<div class='bg'></div>");
+            //         $("ul.gnb ul.sub").show();
+            //         $("ul.enb").show();
+            //     } 
+            // );
+            // $("#title,#subtitle,main").mouseenter(
+            //     function(){
+            //         $("ul.gnb .bg").remove();
+            //         $("ul.gnb ul.sub,ul.enb").hide();
+            //     }
+            // ); 
+            // $("ul.enb").hide();   
+
+            //대메뉴 마우스 호버
+            $("header").hover(
+                function(){ 
+                    $("header ul.sub").addClass("subShow");
+                    $("header ul.enb").addClass("enbShow");  
+                    $(this).addClass("bgShow");
+
+                },
+                function(){
+                    $("header ul.sub").removeClass("subShow");
+                    $("header ul.enb").removeClass("enbShow");     
+                    $(this).removeClass("bgShow");
+                }
+            );
+            
+
+            // top 클릭 
+            $("aside a.top").click(function(){
+                $("html,body").animate({scrollTop:"0px"},1000); // 뒤에 숫자는 시간 1000 = 1초
+                return false;
+            }); 
+            
+            // 서브페이지 스크롤 이벤트
+            $(window).scroll(function(){
+                if($(window).scrollTop()>$("header").height()+$("#subtitle").height()){
+                    $("aside a.top").addClass("asidetopShow");
+                }
+                if($(window).scrollTop()<$("header").height()+$("#subtitle").height()){
+                    $("aside a.top").removeClass("asidetopShow");
+                }
+            });                
+            
+        });
+    </script>
+</head>
+<body>
+    <!-- 상단 영역 -->
+    <header id="header">
+        <div class="wrap">
+            <h1 class="h1">
+                <a href="index.html">samsung</a>
+            </h1>
+            <ul class="gnb">
+                <li>
+                    <h2><a href="philosophy.html">비전</a></h2>
+                    <ul class="sub">
+                        <li><a href="philosophy.html">경영철학</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="history.html">기업정보</a></h2>
+                    <ul class="sub">
+                        <li><a href="history.html">연혁</a></li>
+                        <li><a href="dlight.html">삼성딜라이트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>사업정보</h2>
+                    <ul class="sub">
+                        <li><a href="solution.html">Device Solutions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>지속가능경영</h2>
+                    <ul class="sub">
+                        <li><a href="sustainability.html">지속가능경영전략</a></li>
+                        <li><a href="diversity.html">다양성포용</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>채용</h2>
+                    <ul class="sub">
+                        <li><a href="jobfields.html">직무소개</a></li>
+                        <li><a href="hiring.html">채용 프로세스 안내</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="enb">
+                <li><a href="">samsung design</a></li>
+                <li><a href="">윤리 & 준법 경영</a></li>
+            </ul>
+            <a href="" class="allmenu"><span>전체메뉴</span></a>
+        </div>
+    </header>
+    <!-- 타이틀 영역 -->
+    <div id="subtitle">
+        <div class="wrap">
+            <hgroup>
+                <h2 class="h6">직무소개</h2>
+                <h3 class="h1">Show the world what you can do</h3>
+            </hgroup>
+        </div>
+    </div>
+    <!-- 내용 영역 -->
+    <main>
+        <!-- jobfields -->
+        <section id="jobfields" class="padding-t60 padding-b60">
+            <div class="wrap">
+                <p class="history">About Samsung / 채용 / <strong class="here"> 직무소개</strong></p>
+                <h2 class="h6">직무소개</h2>
+                <p class="p">약 80개 국가의 200여개 거점에서 다양한 직무 담당자들이 함께 일하고 있으며, 각 직무 담당자들은 혁신적인 제품과 솔루션 탄생에 기여하고 있습니다.</p>
+                <div class="rnd">
+                    <h3 class="h2">연구개발</h3>
+                    <p class="p">연구성과를 기초로 상품화까지 진행하는 개발 업무를 하고 있습니다.</p>
+                    <ul>
+                        <li>
+                            <h4 class="h5">회로설계</h4>
+                            <p class="p">디지털/아날로그/RF 설계 기술을 통해 반도체 IC/Package, 화질/음질/안테나/배터리/센서 등 모듈, 보드 및 세트를 설계하고 최적화 합니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">소자개발</h4>
+                            <p class="p">메모리 및 시스템반도체 제품군의 반도체 소자를 분석, 개발합니다. 각 제품 Cell의 특성에 맞는 소자를 설계하고 전기적 특성을 분석하여 트랜지스터를 개발하는 업무입니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">공정개발</h4>
+                            <p class="p">반도체의 8대 공정(Etch, Metal, Clean, Imp, Diff, Photo, CVD, CMP)을 개발하고, 공정과정 전반을 설계하는 직무입니다. 단위공정별 요소기술 개발, 공정 프로세스 최적화, 수율 극대화를 위한 검사, 측정, 분석 등의 업무를 합니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">기구개발</h4>
+                            <p class="p">제품의 기능과 성능에 적합한 형상을 구현하는 직무로, 기구/진동소음/열유체/포장/방수방진 설계, 구동 및 제어, 금형, 사출에 관련된 업무를 합니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">재료개발/소재개발</h4>
+                            <p class="p">폴리머, 메탈 등의 재료를 개발하는 직무로, 제품에 들어가는 다양한 유, 무기 소재를 개발하고 시뮬레이션 합니다.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="software">
+                    <h3 class="h2">소프트웨어</h3>
+                    <p class="p">컴퓨터 프로그래밍을 통해 사용자가 쉽고 편리하고 안전하게 제품을 사용할 수 있도록 합니다.</p>
+                    <ul>
+                        <li>
+                            <h4 class="h5">System Software<br>시스템 소프트웨어</h4>
+                            <p class="p">시스템 운영에 필요한 소프트웨어를 개발하는 직무로, 펌웨어, 디바이스 드라이버, 커널, 그래픽스 관련 개발을 합니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">Middleware Software<br>미들웨어 소프트웨어</h4>
+                            <p class="p">시스템과 어플리케이션을 연결하는 플랫폼을 개발하는 직무로, 유저 인터페이스, 멀티미디어, 네트워크, 모뎀 프로토콜 등을 개발합니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">Application Software<br>어플리케이션 소프트웨어</h4>
+                            <p class="p">유저에게 제공되는 어플리케이션을 개발하는 직무로, 안드로이드/타이젠/윈도우 등의 OS를 기반으로 한 다양한 어플리케이션을 개발하고 있습니다.</p>
+                        </li>
+                    </ul>
+                    <p class="p">* 그 외에도 인공지능, 보안, 서버 등 특정 분야에서의 소프트웨어 개발 업무 등이 있습니다.</p>
+                </div>
+                <div class="technology">
+                    <h3 class="h2">기술/설비</h3>
+                    <p class="p">제품 개발부터 양산까지 품질과 생산성 향상을 위한 업무를 수행합니다.</p>
+                    <ul>
+                        <li>
+                            <h4 class="h5">개발 품질</h4>
+                            <p class="p">양산 제품의 품질 문제가 발생하지 않도록 개발 단계의 모든 검증과정을 관리합니다. 또한 제품 개발에서 생산, 판매 고객 서비스에 이르기까지 최고의 품질을 유지하기 위한 전략을 수립하고 관리합니다. 그 외에도 규격인증, 부품품질, 고객지원 등의 업무를 하고 있습니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">제품 기술</h4>
+                            <p class="p">최적의 공정과 양산 품질을 지원하는 직무로, 양산 기술, 제품 검증, 금형 관리, 제품 불량 분석, 부품 승인 등의 업무를 합니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">설비 기술</h4>
+                            <p class="p">설비의 성능개선, 오류대응, 유지관리, 설비조건 설계, 설비제어 S/W개발, 자동화 설비제작 기술지원 등을 수행합니다. 그 외에도 공정기술, 금형기술, 글로벌 기술지원 등의 업무가 있습니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">제조 기술</h4>
+                            <p class="p">통계적 생산/품질관리, 생산/물류시스템 최적화, 생산관리 S/W 개발, 제조 인프라(전력, 배관, 공조 등)의 Set-up 및 운영, 건설 등의 업무를 합니다.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="marketing">
+                    <h3 class="h2">영업 마케팅</h3>
+                    <p class="p">새로운 상품을 기획하고 판매를 촉진시켜 수익을 창출하고 있습니다.</p>
+                    <ul>
+                        <li>
+                            <h4 class="h5">Product Planning<br>& Management<br>상품기획, 제품전략</h4>
+                            <p class="p">시장, 소비자, 경쟁사 및 각종 선진기술을 분석하여 차별화된 전략과 제품의 로드맵을 수립하는 제품 기획 업무, 그리고 제품 포트폴리오를 출시부터 단종까지 관리하는 제품 관리에 관련된 업무를 합니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">Marketing<br>마케팅</h4>
+                            <p class="p">제품 및 기업의 IMC 전략을 담당하는 마케팅 커뮤니케이션, 리테일 전략 수립 및 유통 데이터 분석을 하는 리테일 마케팅, 소비자의 니즈와 트렌드를 파악하고 제품 및 브랜드를 개선하는 시장 조사 등의 업무가 있습니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">Sales Operation<br>영업</h4>
+                            <p class="p">담당 국가별 법인과 함께 수요, 판매 데이터를 분석하여 매출 및 중장기 판매 전략을 수립하고 추진합니다. 개별 고객을 대상으로 제품을 판매하는 B2C영업, 기업간 거래를 담당하는 B2B영업, 전 세계 공급망 관리 업무를 담당하는 SCM 등이 있습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="design">
+                    <h3 class="h2">디자인</h3>
+                    <p class="p">사용자가 만지고 볼 수 있는 모든 요소들을 보다 아름답고 편리하게 디자인 합니다.</p>
+                    <ul>
+                        <li>
+                            <h4 class="h5">Product Design<br>제품 디자인</h4>
+                            <p class="p">제품의 조형적 디자인 컨셉을 수립하고 시각적으로 구체화하여 상품화하는 직무로, CMF디자인, Mock-up 제작, 3D모델링 등의 업무를 합니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">Interaction Design<br>인터랙션 디자인</h4>
+                            <p class="p">제품 및 서비스의 UX디자인 전략을 수립하고 UI를 디자인 하는 직무로, Visual 인터랙션 디자인, Auditory 인터랙션 디자인, Physical 인터랙션 디자인, UX Writing 등의 업무를 합니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">Visual Design<br>비주얼 디자인</h4>
+                            <p class="p">제품 및 서비스에 대한 컨텐츠를 그래픽 요소로 시각화하는 그래픽 디자인, 대내/외 커뮤니케이션을 위해 디자인 컨셉을 그래픽, 영상 등으로 구현하는 비주얼 커뮤니케이션 디자인, 제품의 특성과 포장물의 원리를 이해하여 상품화하는 패키지 디자인 등의 업무를 포함합니다.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="business">
+                    <h3 class="h2">경영지원</h3>
+                    <p class="p">기획, 재무, 인사, 경영혁신, 구매 등 경영진의 의사결정을 지원해 주는 스탭 업무입니다. </p>
+                    <ul>
+                        <li>
+                            <h4 class="h5">기획</h4>
+                            <p class="p">사업을 둘러싼 대내/외 환경분석, 중장기 사업전략 수립, 신사업 기획 등의 업무를 합니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">재무</h4>
+                            <p class="p">일반회계, 결산, 세무회계와 관련된 재무회계, 예산 및 투자 관리, 원가 배부, 목표 및 성과관리에 관련된 관리 회계, 자금 기획 및 운영, 외환 관리와 관련된 자금 업무를 합니다.</p>
+                        </li>
+                        <li>
+                            <h4 class="h5">구매</h4>
+                            <p class="p">품질, 공급 경쟁력이 확보된 부품을 적기에 조달하는 직무로, 회로개발/기구개발 구매 업무가 있습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="posting">
+                    <p class="p">자신에게 잘 맞는 기회를 찾아보세요.</p>
+                    <a href="">채용공고</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside class="right">
+        <div class="quickmenu">
+            <ul>
+                <li><a href="">매장 방문 예약하고<span class="block"></span>맞춤 상담을 받아보세요.</a></li>
+                <li><a href="">무엇을 도와드릴까요?<span class="block"></span>온라인 구매 상담사 입니다.</a></li>
+                <li><a href="">빠르고 편리하게 도와드리는<span class="block"></span>삼성닷컴 챗봇입니다.</a></li>
+            </ul>
+            <a href="" class="up">보기</a>
+        </div>
+        <a href="" class="top">상단으로 이동</a>
+    </aside>
+    <!-- 하단 영역 -->
+    <footer>
+        <div class="wrap">
+            <ul class="fnb top">
+                <li>
+                    <h2><a href="philosophy.php">비전</a></h2>
+                    <ul class="sub">
+                        <li><a href="philosophy.php">경영철학</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="history.php">기업정보</a></h2>
+                    <ul class="sub">
+                        <li><a href="history.php">연혁</a></li>
+                        <li><a href="dlight.php">삼성딜라이트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>사업정보</h2>
+                    <ul class="sub">
+                        <li><a href="solution.php">Device Solutions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>지속가능경영</h2>
+                    <ul class="sub">
+                        <li><a href="sustainability.php">지속가능경영전략</a></li>
+                        <li><a href="diversity.html">다양성포용</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>채용</h2>
+                    <ul class="sub">
+                        <li><a href="">직무소개</a></li>
+                        <li><a href="">채용 프로세스 안내</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="middle">
+                <address>
+                    삼성전자 주식회사 대표이사 : 한종희<span></span> 사업자등록번호 : 124-81-00998 <a href="">사업자 정보확인</a><span></span> 통신판매업 신고 : 2000-경기수원-0515<br>
+                    사업장주소 : 경기도 수원시 영통구 삼성로 129(매탄동)<span></span> 호스팅서비스사업자 : 한국아이비엠(주)<span></span> 대표번호 : 02-2255-0114 제품/서비스/멤버십: 1588-3366(통화요금 : 발신자부담)<span></span> 구매문의 : 1588-6084<span></span> 큐커 식품관 문의 : 1811-9228 
+                </address>
+                <p class="p">본 사이트에서 판매되는 상품 중에는 등록된 개별 판매자가 판매하는 상품이 포함되어 있습니다.</p>
+                <p class="p">개별 판매자 판매 상품의 경우 삼성전자(주)는 통신판매중개업자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 상품, 거래정보 및 거래 등에 대해 책임을 지지 않습니다.</p>
+                <p class="p">본 사이트의 컨텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사, 배포 등을 금합니다.</p>
+                <p class="copyright">Copyright © 1995-2022 Samsung. All Rights Reserved.</p>
+            </div>
+            <div class="bottom">
+                <ul class="left">
+                    <li><a href="">한국/한국어</a></li>
+                    <li><a href="">이메일 무단 수집거부</a></li>
+                    <li><a href="">아이디어 정책</a></li>
+                    <li><a href="">사이트맵</a></li>
+                    <li>
+                        <select name="" id="">
+                            <option value="">이용약관</option>
+                            <option value="">삼성전자 대표사이트 이용약관</option>
+                            <option value="">삼성전자멤버십 이용약관</option>
+                            <option value="">Samsung 서비스 이용약관</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="" id="">
+                            <option value="">개인정보처리방침</option>
+                            <option value="">삼성전자멤버십 개인정보처리방침</option>
+                        </select>
+                    </li>
+                </ul>
+                <div class="right">
+                    <span class="banner">
+                        <li><a href="">웹접근성 우수사이트</a></li>
+                        <li><a href="">개인정보보호 우수사이트</a></li>
+                    </span>
+                    <ul class="sns">
+                        <li><a href="">페이스북</a></li>
+                        <li><a href="">유튜브</a></li>
+                        <li><a href="">인스타그램</a></li>
+                        <li><a href="">블로그</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

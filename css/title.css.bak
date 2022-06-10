@@ -1,0 +1,130 @@
+#title {
+  
+} 
+#title .wrap { 
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+}
+#title ul.slide{
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 200%;
+  color: #fff;
+}
+#title ul.slide li{
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 50%;
+  line-height: 1.5;
+}
+#title ul.slide li:nth-child(1){ 
+  background-color: #1428a0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/title1.jpg);
+  background-size: cover;
+}
+#title ul.slide li:nth-child(2){  
+  background: url(../img/title_2.jpg) no-repeat;
+  background-size: cover;
+}
+#title ul.slide li h2{
+  margin-bottom: 10px;
+  transition: all 0.4s;
+  font-size: 60px;
+}
+#title ul.slide li:nth-child(1) h2{
+  animation-name: slideh2;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+@keyframes slideh2{
+  0%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+}
+#title ul.slide li p{
+  font-weight: normal;
+  transition: all 0.4s;
+  font-size: 16px;
+}
+#title ul.slide li:nth-child(1) p{
+  animation-name: slidep;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+@keyframes slidep{
+  0%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(50%);
+    opacity: 0;
+  }
+}
+#title span.control{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 70px);
+  border-radius: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+#title span.control a{  
+  width: 50px;
+  height: 140px;
+  background-color: rgba(255,255,255,0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+#title span.control a:hover{
+  
+  background-color: #fff;
+}
+#title span.control a:nth-child(1){
+  border-radius: 0px 10px 10px 0px;
+}
+#title span.control a:nth-child(2){
+  border-radius: 10px 0px 0px 10px;
+}
+#title span.control a:nth-child(1)::before{ /* 왼쪽 화살표 */
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 2px solid #000;
+  border-right: transparent;
+  border-bottom: transparent;
+  transform: translateX(5px) rotate(-45deg);
+}
+#title span.control a:nth-child(2)::before{ /* 오른쪽 화살표 */
+    content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 2px solid #000;
+  border-left: transparent;
+  border-bottom: transparent;
+  transform: translateX(-5px) rotate(45deg);
+}

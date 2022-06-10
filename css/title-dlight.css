@@ -1,0 +1,58 @@
+#subtitle {
+
+}
+#subtitle .wrap{
+  height: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../img/dlighttitle.jpg);
+  color: #fff;
+  background-size: cover;
+}
+#subtitle hgroup{
+
+}
+#subtitle h2.h6{
+  font-size: 20px;
+}
+#subtitle h3.h1{
+  line-height: 2;
+  font-weight: 600;
+  font-size: 60px;
+}
+#subtitle .p{
+  font-size: 16px;
+  line-height: 2;
+}
+#subtitle a{ 
+  width: 250px;
+  margin: 20px auto;
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 28px;
+  font-size: 14px;
+  text-shadow: 0px 0px 10px #333;  
+  transition: all 0.5s;
+  border: 1px solid #fff;
+}
+#subtitle a:hover{ 
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#subtitle a::after{
+  content: "";
+  background-image: url(../img/link.png);
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  background-size: 100%;
+  margin-left: 10px;
+  transition: all 0.5s;
+}
+#subtitle a:hover::after{
+  background-image: url(../img/linkw.png);
+}

@@ -1,0 +1,179 @@
+#diversity {
+  
+}
+
+#diversity .wrap {  
+  padding: 60px 0;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+#diversity h2.h2 {  
+  font-size: 40px;
+}
+
+#diversity .wrap > p.p {
+  
+  font-size: 18px;
+  font-weight: 300;
+  margin: 30px 0 100px;
+}
+
+#diversity .people {  
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#diversity .people h3.h3 { 
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 2;
+}
+#diversity .people > p.p {  
+  font-size: 18px;
+  line-height: 1.6;
+}
+#diversity .people .list {  
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+#diversity .people .list li {  
+  width: 25%;
+  margin-bottom: 60px;
+}
+
+#diversity .people .list li h4.h4 {  
+  font-size: 28px;
+}
+#diversity .people .list li h4.h4::before{
+  content: "";
+  display: block;
+  width: 351px;
+  height: 190px;
+  background-size: cover;
+}
+#diversity .people .list li:nth-child(1) h4.h4::before{
+ background-image: url(../img/people1.webp);
+}
+#diversity .people .list li:nth-child(2) h4.h4::before{
+ background-image: url(../img/people2.webp);
+}
+#diversity .people .list li:nth-child(3) h4.h4::before{
+ background-image: url(../img/people3.webp);
+}
+#diversity .people .list li:nth-child(4) h4.h4::before{
+ background-image: url(../img/people4.webp);
+}
+#diversity .people .list li:nth-child(5) h4.h4::before{
+ background-image: url(../img/people5.webp);
+}
+#diversity .people .list li:nth-child(6) h4.h4::before{
+ background-image: url(../img/people6.webp);
+}
+#diversity .people .list li:nth-child(7) h4.h4::before{
+ background-image: url(../img/people7.webp);
+}
+#diversity .people .list li:nth-child(8) h4.h4::before{
+ background-image: url(../img/people8.webp);
+}
+#diversity .people .list li h5.h5 {  
+  font-size: 18px;
+  line-height: 4;
+  font-weight: 400;
+}
+
+#diversity .people .list li p.p {  
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+#diversity .employee {  
+  background-color: #f7f7f7;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+#diversity .employee::after {  
+ content: "";
+ display: block;
+ background-image: url(../img/employee.webp);
+ width: 1920px;
+ height: 581px;
+ margin-top: 150px;
+ background-size: 100%;
+ margin: 0 auto;
+}
+#diversity .employee h3.h3 {  
+  font-weight: 500;
+  font-size: 35px;
+}
+
+#diversity .employee p.p {  
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 30px 0;
+}
+
+#diversity .initiatives {  
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+#diversity .initiatives h3.h3 {  
+  font-size: 35px;
+  font-weight: 500;
+}
+#diversity .initiatives > p.p {  
+  font-size: 18px;
+  font-weight: 300;
+}
+#diversity .initiatives .other {  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 90px;
+  justify-content: center;
+}
+#diversity .initiatives .other li {  
+  width: calc(100% / 3 - 20px);
+  text-align: left;
+  margin-bottom: 30px;
+}
+#diversity .initiatives .other li h4.h4 {  
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 3;
+}
+#diversity .initiatives .other li h4.h4::before{
+  content: "";
+  display: block;
+  width: 464px;
+  height: 247px;
+  background-size: cover;
+  margin-left: -30px;
+}
+#diversity .initiatives .other li:nth-child(1) h4.h4::before{  
+  background-image: url(../img/initiatives1.webp);
+}
+#diversity .initiatives .other li:nth-child(2) h4.h4::before{  
+  background-image: url(../img/initiatives2.webp);
+}
+#diversity .initiatives .other li:nth-child(3) h4.h4::before{  
+  background-image: url(../img/initiatives3.webp);
+}
+#diversity .initiatives .other li:nth-child(4) h4.h4::before{  
+  background-image: url(../img/initiatives4.webp);
+}
+#diversity .initiatives .other li:nth-child(5) h4.h4::before{  
+  background-image: url(../img/initiatives5.webp);
+}
+#diversity .initiatives .other li:nth-child(6) h4.h4::before{  
+  background-image: url(../img/initiatives6.webp);
+}
+#diversity .initiatives .other li p.p {  
+  width: 88%;
+  font-weight: 300;
+}

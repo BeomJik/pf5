@@ -1,0 +1,213 @@
+header {    
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+header.headerDown{
+  animation-name: headerDown;
+  animation-direction: reverse;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  background-color: #fff; 
+}
+@keyframes headerDown{
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(-100%);
+  }
+}
+header:hover{
+  position: fixed;
+}
+header::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: #fff;                                 
+  transition: all 0.5s;
+}
+header.bgShow::before{
+  height: 350px;  
+  top: 60px;
+  background-color: #eee; 
+}
+.bg{
+  display: block;
+  width: 100%;
+  height: 10%;
+  margin-top: 60px;
+  background-color: #eee; 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: 0.5s;
+  animation-name: bgSlide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes bgSlide{
+  100%{
+    height: 350px;
+  }
+}
+header .wrap{ 
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+header .h1{  
+  font-size: 20px;
+  position: relative;
+}
+header h1 a {   
+  text-transform: uppercase;
+  font-weight: 800;
+}
+header h1 a:hover{
+  color: #1428a0;
+  text-shadow: 2px 2px 5px #eee;
+}
+header h1 a span{
+  font-size: 12px;
+  line-height: 1.5;
+}
+header ul.gnb {    
+  display: flex;
+  width: 70%;
+  position: relative;
+}
+header ul.gnb>li {   
+  position: relative;
+  z-index: 1;
+  width: 20%;
+  padding: 0 30px;
+  cursor: pointer;
+}
+header ul.gnb>li h2{    
+  width: fit-content;
+  padding-bottom: 5px;
+}
+header ul.gnb > li h2 a{
+  
+}
+header ul.sub {
+  margin: 40px 0 0 0;
+  position: absolute; 
+  transition: all 0.5s;
+  transform: translateY(-350px); 
+  opacity: 0;
+}
+.subShow{
+  display: block !important;
+  transform: translateY(0%) !important;
+  opacity: 1 !important;
+}
+header ul.sub li{
+
+}
+header ul.sub li a{
+ display: block;
+ font-size: 13px;
+ line-height: 3;
+ font-weight: 300;
+ color: #555;
+}
+header ul.enb{
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 100%;
+  justify-content: right;
+  padding-right: calc((100% - 1400px) / 2); 
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+  top: 0px;
+  display: flex;
+  transition: all 0.5s;
+  transform: translateY(-100px);
+  opacity: 0;
+}
+.enbShow{
+  transform: translateY(350px) !important;
+  display: flex !important;
+ opacity: 1 !important;
+}
+header ul.enb li{
+
+}
+header ul.enb li a{
+  padding: 0 30px;
+  text-transform: capitalize;
+  position: relative;
+  display: block;
+  font-size: 13px;
+  line-height: 3;
+  font-weight: 300;
+  color: #555; 
+}
+header ul.enb li:nth-child(2) a::before{
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  border-left: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+  top: calc((100% - 15px) / 2);
+}
+header a.allmenu {  
+  font-size: 0;
+  border: 2px solid #1428A0;
+  width: 7px;
+  height: 7px;
+  position: relative;
+  display: block;
+  left: 0;
+  top:  0;
+}
+header a.allmenu span{
+  display: block;
+  width: 7px;
+  height: 7px;
+  border:2px solid #000;
+  position: absolute;
+  left: -15px;
+  top: -2px;
+  transition: all 0.5s;
+}
+header a.allmenu span::before{
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border:2px solid #000;
+  position: absolute;
+  left: -2px;
+  top: 11px;
+  transition: all 0.5s;
+}
+header a.allmenu span::after{
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border:2px solid #000;
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  transition: all 0.5s;
+}
+header:hover+div{
+  margin-top: 61px;
+}
